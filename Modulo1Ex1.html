@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <script> //javascript
+            var endereco = {
+                rua: "Rua dos pinheiros",
+                numero: 1293,
+                bairro: "Centro",
+                cidade: "São Paulo",
+                uf: "SP"
+            };
+            
+            function retornaFrase(endereco) {
+                
+                var a = endereco.rua,
+                b = endereco.numero,
+                c = endereco.bairro,
+                d = endereco.cidade,
+                e = endereco.uf;
+
+
+                var f = 'O usuário mora em ',
+                g = ', '
+                h = 'no bairro',
+                i = ' ',
+                j = 'na rua ',
+                k = 'com ',
+                l = 'n°',
+                m = ' / ',
+                n = `"`;
+                o = '.'
+                
+                var frase = f + d + m + e + g + i + h + i + c + g + i + j + n + a + n + i + k + i + l + i + b + o;
+
+                /*
+                var frase = 'O usuário mora em' + " " + endereco.cidade + " " + " / " + endereco.uf + " " + 
+                "," + " " + "no bairro" + " " + endereco.bairro + "," + " " +
+                "na rua" + " " + endereco.rua + " " + "com" + " " + "n°" + " " + endereco.numero + '.';
+                */
+
+                return frase;
+            };
+            
+            console.log(retornaFrase(endereco));
+
+        </script>
+    </body>
+</html>
