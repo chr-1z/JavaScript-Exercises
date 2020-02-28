@@ -4,16 +4,17 @@
     </head>
     <body>
         <script> //javascript
-            function temHabilidade(skills) {
+            function temHabilidade(dados) {
                 var valida = false
-                for (var i = 0; i <= skills.lenght; i++) {
-                    if ((skills[i]) == "Javascript") {
-                        return true
+                x = 0
+                while (x <= dados.length) {
+                    if (dados[x] == "Javascript") {
+                        valida = true
                     }
+                    return valida }
             }
             var skills = ["Javascript", "ReactJS", "React Native"];
-            temHabilidade(skills); // true ou false       
-            
+            console.log(temHabilidade(skills)); // true ou false       
         </script>
     </body>
 </html>
