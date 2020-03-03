@@ -6,6 +6,14 @@
         <script> //javascript
 
             function habilidade(skill, find) {
+                return (skill.indexOf(find) >= 0);
+                }
+
+            var skill = ['javascript', 'reactjs', 'React native'];
+            var resultado = habilidade(skill, 'javascript');
+            console.log(resultado);
+
+            /*
                 var i = 0;
                 while(i < skill.length) {
                     if (skill[i] == find) {
@@ -24,7 +32,7 @@
             
 
 
-
+            */
         </script>
     </body>
 </html>
